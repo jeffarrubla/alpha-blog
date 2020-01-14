@@ -41,7 +41,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
+  gem 'sqlite3', '~> 1.4'
 end
 
 group :test do
@@ -51,7 +51,7 @@ group :test do
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
   # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
+  gem 'sqlite3', '~> 1.4'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -60,3 +60,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 group :production do
   gem 'pg'
 end
+# to use IRB on console
+gem 'irb', require: false
