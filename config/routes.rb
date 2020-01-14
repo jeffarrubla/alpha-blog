@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   root 'pages#home' 
   # get 'pages/about', to: 'pages#about' if not related to root
   get 'about', to: 'pages#about'
+
+  resources :articles # give article path (DELETE; UPDATE; INDEX; CREATE)
 end
