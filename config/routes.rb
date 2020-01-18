@@ -6,4 +6,7 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about'
 
   resources :articles # give article path (DELETE; UPDATE; INDEX; CREATE)
+
+  get 'signup', to: 'users#new'
+  resources :users, except: [:new]
 end
