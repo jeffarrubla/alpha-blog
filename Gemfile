@@ -56,6 +56,8 @@ group :test do
   gem 'webdrivers'
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', '~> 1.4'
+  # To do integration testing
+  gem 'rails-controller-testing'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
