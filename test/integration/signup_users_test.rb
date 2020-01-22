@@ -17,7 +17,7 @@ class SignupUsersTest < ActionDispatch::IntegrationTest
 		get signup_path
 		assert_template 'users/new'
 		assert_no_difference 'User.count' do
-			post users_path, params: {user: {username: "fido", email: 'fido@fido.com', password: ""}}			
+			post users_path, params: {session: {username: "fido", email: 'fido@fido.com', password: ""}}			
 		end
 		assert_template 'users/new'
 		assert_select 'h2.card-title.center'
